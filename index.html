@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <main class="contenedor">
+        <h1>Formulario de matrícula</h1>
+        <form action="#" method="GET">
+            <label for="nombre">Nombre completo:</label>
+            <input id="nombre" name="nombre" type="text" required minlength="3">
+
+            <label for="correo">Correo:</label>
+            <input id="correo" name="correo" type="email" required>
+
+            <label for="edad">Edad:</label>
+            <input id="edad" name="edad" type="number" min="16" max="80">
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input id="fecha" name="fecha" type="date">
+
+            <label for="carrera">Carrera:</label>
+            <select name="carrera" id="carrera" required>
+                <option value="">Seleccione</option>
+                <option value="ds">Desarrollo de Software</option>
+                <option value="rt">Redes y Telecomunicaciones</option>
+                <option value="si">Sistemas de Información</option>
+            </select>
+
+            <p>Turno:</p>
+            <label><input type="radio" name="turno" value="m">Mañana</label>
+            <label><input type="radio" name="turno" value="n">Noche</label>
+
+            <label><input type="checkbox" name="aceptar">Acepto el tratamiento de los datos</label>
+            <label for="obs">Observación:</label>
+            <textarea name="obs" id="obs"></textarea>
+
+        </form>
+        <div class="acciones">
+            <button type="submit">Registrar matrícula</button>
+            <button type="reset">Limpiar</button>
+        </div>
+    </main>
+</body>
+
+</html>
+
+<!--Verificar que el título aparece antes de continuar.--
